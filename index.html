@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">NetClone</div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Movies</a>
+                <a href="#" class="nav-link">TV Shows</a>
+                <a href="#" class="nav-link">My List</a>
+            </nav>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search movies..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Stranger Things</h1>
+            <p class="hero-description">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-play">▶ Play</button>
+                <button class="btn btn-info">ℹ More Info</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <section class="category-section">
+            <h2 class="category-title">Trending Now</h2>
+            <div class="movie-row" id="trending"></div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Top Rated</h2>
+            <div class="movie-row" id="topRated"></div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Your Next Watch</h2>
+            <div class="movie-row" id="nextWatch"></div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Action & Adventure</h2>
+            <div class="movie-row" id="action"></div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Comedy</h2>
+            <div class="movie-row" id="comedy"></div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Drama</h2>
+            <div class="movie-row" id="drama"></div>
+        </section>
+    </div>
+
+    <div id="searchResults" class="search-results hidden">
+        <h2 class="category-title">Search Results</h2>
+        <div class="movie-row" id="searchResultsRow"></div>
+    </div>
+
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
